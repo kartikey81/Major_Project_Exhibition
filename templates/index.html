@@ -8,7 +8,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <style>
 * {box-sizing: border-box;}
-
+/* On screens with a maximum window width of 1280px */
+@media screen and (max-width: 1280px)
+/* On all screen types with a window width of between 1024px and 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+/* On TVs */
+@media tv
+/* On all vertically oriented types of screens */
+@media all and (orientation: portrait)
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +57,7 @@ body {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+
   .header a {
     float: none;
     display: block;
@@ -60,7 +67,7 @@ body {
   .header-right {
     float: none;
   }
-}
+
 
 #header-image-menu{
     top: 10px;
