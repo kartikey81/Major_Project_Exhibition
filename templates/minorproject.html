@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+		<style>
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+#header-image-menu{
+    top: 10px;
+    position: relative;
+}
+
+#header-image-menu img{
+    width: 100%;
+    margin: none;
+    padding: none;
+}
+
+
+ 
+
+ *{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: rgba( 71, 147, 227, 1);
+}
+h2{
+    text-align: center;
+    font-size: 150px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 100px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 60px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 5%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 50px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo"><img src="static/PIET logo with tagline.jpg" style="width: 500px; height:fit-content" /></a>
+        <div class="header-right">
+            <a class="btn btn-primary" href="/" style="font-size:60px">Home</a>
+    
+    
+            <a class="btn btn-secondary" href="/aboutus" style="font-size:60px" >About</a>
+        </div>
+      </div>
+    <h2>Mini Projects</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>Project Title</th>
+                <th>Deployment Link</th>
+                <th>Github Link</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>HandWrittenDigit Recognition</td>
+                <td><a href="https://kartikey81-handwritten-image-recognition-app-4ifjxw.streamlitapp.com/" target="_blank">https://kartikey81-handwritten-image-recognition-app-4ifjxw.streamlitapp.com</a></td>
+                <td><a href="https://github.com/kartikey81/Handwritten_Image_recognition" target="_blank">https://github.com/kartikey81/Handwritten_Image_recognition</a></td>
+                
+            </tr>
+            <tr>
+                <td>Decision_Tree_Experiment Social_Ads_dataset</td>
+                <td><a href="https://kartikey81-handwritten-image-recognition-app-4ifjxw.streamlitapp.com/" target="_blank">https://kartikey81-handwritten-image-recognition-app-4ifjxw.streamlitapp.com</a></td>
+                <td><a href="https://github.com/kartikey81/Decision_Tree_Experiment" target="_blank">https://github.com/kartikey81/Decision_Tree_Experiment</a></td>
+                
+            </tr>
+            <tr>
+                <td>NLP Dataset Review</td>
+                <td><a href="https://kartikey81-nlp-dataset-review-app-s7uki0.streamlitapp.com/" target="_blank">https://kartikey81-nlp-dataset-review-app-s7uki0.streamlitapp.com</a></td>
+                <td><a href="https://github.com/kartikey81/NLP_Dataset_review" target="_blank">https://github.com/kartikey81/NLP_Dataset_review</a></td>
+                
+            </tr>
+            <tr>
+                <td>NLP Sentiment analysis Restaurant Review</td>
+                <td><a href="https://kartikey81-nlp-sentiment-analysis-app-4pdx7r.streamlitapp.com/" target="_blank">https://kartikey81-nlp-sentiment-analysis-app-4pdx7r.streamlitapp.com</a></td>
+                <td><a href="https://github.com/kartikey81/NLP_sentiment_analysis" target="_blank">https://github.com/kartikey81/NLP_sentiment_analysis</a></td>
+                
+            </tr>
+            <tr>
+                <td>SVM and Random Forest Experiment</td>
+                <td><a href="https://kartikey81-svm-randomforest-model-app-6q5rnw.streamlitapp.com/" target="_blank">https://kartikey81-svm-randomforest-model-app-6q5rnw.streamlitapp.com/</a></td>
+                <td><a href="https://github.com/kartikey81/SVM_RandomForest_model" target="_blank">https://github.com/kartikey81/SVM_RandomForest_model</a></td>
+                
+            </tr>
+            <tr>
+                <td>Placement Prediction Project</td>
+                <td><a href="https://predict-placement-kartikey.herokuapp.com/" target="_blank">https://predict-placement-kartikey.herokuapp.com/</a></td>
+                <td><a href="https://github.com/kartikey81/Placement_Prediction_Dataset" target="_blank">https://github.com/kartikey81/Placement_Prediction_Dataset</a></td>
+                
+            </tr>
+            <tr>
+                <td>Digit Recognition</td>
+                <td><a href="https://recognization-kartikey.herokuapp.com/ann" target="_blank">https://recognization-kartikey.herokuapp.com/ann</a></td>
+                <td><a href="https://github.com/kartikey81/digit-recognization" target="_blank">https://github.com/kartikey81/digit-recognization</a></td>
+                
+            </tr>
+            <tr>
+                <td>Project MiniProject-churn-dataset all ML algorithms</td>
+                <td><a href="https://project-kartikey.herokuapp.com/" target="_blank">https://project-kartikey.herokuapp.com/</a></td>
+                <td><a href="https://github.com/kartikey81/MiniProject-churn-dataset" target="_blank">https://github.com/kartikey81/MiniProject-churn-dataset</a></td>
+                
+            </tr>
+            <tr>
+                <td>Face_detection_cnn Project</td>
+                <td><a href="https://face-detection-kartikey.herokuapp.com" target="_blank">https://face-detection-kartikey.herokuapp.com</a></td>
+                <td><a href="https://github.com/kartikey81/Face_detection_cnn" target="_blank">https://github.com/kartikey81/Face_detection_cnn</a></td>
+                
+            </tr>
+            <tr>
+                <td>House Price Prediction</td>
+                <td><a href="https://house-price-kartikey.herokuapp.com" target="_blank">https://house-price-kartikey.herokuapp.com/</a></td>
+                <td><a href="https://github.com/kartikey81/HousePricePrediction" target="_blank">https://github.com/kartikey81/
+                    HousePricePrediction</a></td>
+
+            </tr>
+            <tbody>
+        </table>
+    </div>
+
+</body>
+</html>
